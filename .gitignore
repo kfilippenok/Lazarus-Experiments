@@ -1,0 +1,17 @@
+*.log
+*.dbg
+*.exe
+
+// Backups
+backup/
+
+// ProjectFiles
+*.lps
+*.res
+
+// Compile
+lib/
+*.compiled
+*.ppu
+*.o
+*.or
