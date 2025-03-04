@@ -1,4 +1,4 @@
-# TestCache
+# Draw cached bitmap
 
 ## Description
 
@@ -11,9 +11,10 @@ Test drawing of cached bitmaps and pure draw. In projects used BGRABitmap.
 - **GPU:** AMD ATI 0f:00.0 Raphael
 - **Compiler version:** FPC 3.3.1 x86_64-linux-gtk2
 - **Compiler version:** Lazarus 4.99 (rev main_4_99-1386-gf90db81742) 
-- **Device:** Computer
 
 ## Results
+
+For the test, 100 elements were used, representing a red square measuring 100 by 100. As the number of elements increases, the difference remains about the same.
 
 | Mode             | First draw time    | Min time   | Max time   |
 | ---------------- | ------------------ |----------  |----------  |

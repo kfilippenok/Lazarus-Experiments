@@ -18,5 +18,5 @@ lib/
 
 // Projects
 
-// TestCache
-test_cache
+// DrawCachedBitmap
+draw_cached_bitmap

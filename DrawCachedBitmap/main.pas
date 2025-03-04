@@ -61,7 +61,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
   private
-    CachedGraphics: Array [0..99] of TCachedGraphic;
+    CachedGraphics: Array [0..100] of TCachedGraphic;
   public
 
   end;
@@ -218,10 +218,10 @@ var
 begin
   for i := 0 to Pred(Length(CachedGraphics)) do
     CachedGraphics[i].UseCache := False;
-  StartTime := GetTickCountMCS;
+  StartTime := GetTickCountMS;
   for i := 0 to Pred(Length(CachedGraphics)) do
     CachedGraphics[i].Draw(PaintBox.Canvas);
-  EndTime := GetTickCountMCS;
+  EndTime := GetTickCountMS;
   Memo.Lines.Add('Pure: ' + IntToStr(EndTime - StartTime));
 end;
 
@@ -232,10 +232,10 @@ var
 begin
   for i := 0 to Pred(Length(CachedGraphics)) do
     CachedGraphics[i].UseCache := True;
-  StartTime := GetTickCountMCS;
+  StartTime := GetTickCountMS;
   for i := 0 to Pred(Length(CachedGraphics)) do
     CachedGraphics[i].Draw(PaintBox.Canvas);
-  EndTime := GetTickCountMCS;
+  EndTime := GetTickCountMS;
   Memo.Lines.Add('Cache: ' + IntToStr(EndTime - StartTime));
 end;
 
