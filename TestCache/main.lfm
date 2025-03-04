@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 2810
+  Height = 371
+  Top = 32
+  Width = 500
+  Caption = 'Form1'
+  ClientHeight = 371
+  ClientWidth = 500
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object btnDrawPure: TButton
+    Left = 320
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Pure'
+    TabOrder = 0
+    OnClick = btnDrawPureClick
+  end
+  object PaintBox: TPaintBox
+    Left = 8
+    Height = 345
+    Top = 8
+    Width = 296
+  end
+  object Memo: TMemo
+    Left = 320
+    Height = 305
+    Top = 48
+    Width = 168
+    TabOrder = 1
+  end
+  object btnDrawCache: TButton
+    Left = 413
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Cache'
+    TabOrder = 2
+    OnClick = btnDrawCacheClick
+  end
+end

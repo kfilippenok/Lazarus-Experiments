@@ -15,3 +15,8 @@ lib/
 *.ppu
 *.o
 *.or
+
+// Projects
+
+// TestCache
+test_cache
